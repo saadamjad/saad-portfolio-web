@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.css';
+// Put any other imports below so  that bootstap css can work entire component
 import './index.css';
-import App from './App';
+import Rootfilecomponent from './components';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Rootfilecomponent />
   </React.StrictMode>
 );
 
