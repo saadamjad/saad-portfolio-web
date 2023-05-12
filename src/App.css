@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+    height: 100%;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -28,6 +30,16 @@
   color: #61dafb;
 }
 
+.childDiv {
+ 	    height: 100vh;
+  display: flex;
+
+     width: 100%;
+
+  border: '1px solid rgba(0,255,0,0.3)';
+	background-color:blue;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +48,4 @@
     transform: rotate(360deg);
   }
 }
+
