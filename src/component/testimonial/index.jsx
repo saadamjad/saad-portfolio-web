@@ -4,7 +4,8 @@ import React from 'react';
 import './style.css';
 
 const Testimonial = () => {
-	return <div>Testimonial </div>;
+			return <section id='testimonials'>Testimonials </section>;
+
 };
 
 export { Testimonial };

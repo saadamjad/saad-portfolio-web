@@ -1,9 +1,10 @@
 /** @format */
 
 import React from 'react';
-import './style.css';
 import { CTA } from './CTA';
 import myImage from '../../assets/me.png';
+import { HeaderFolder } from './HeaderSocials';
+import './header.css';
 
 const Header = () => {
 	return (
@@ -14,12 +15,28 @@ const Header = () => {
 				<h5 className='text-light'> MOBILE APP DEVELOPER</h5>
 				<CTA />
 
-				<div className='me'>
-					<img
-						src={myImage}
-						alt='profile-img'
-					/>
+				<HeaderFolder />
+				<div
+					style={{
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'center',
+						height: '30rem',
+						overflow: 'hidden',
+					}}>
+					<div className='me'>
+						<img
+							src={myImage}
+							alt='me'
+						/>
+					</div>
 				</div>
+
+				<a
+					href='#contact'
+					className='scroll_down'>
+					Scroll Down
+				</a>
 			</div>
 		</header>
 	);
